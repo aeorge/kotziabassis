@@ -28,6 +28,12 @@ class MyDocument extends Document {
             href='/favicon/favicon-32x32.png'
           />
           <link rel='manifest' href='/favicon/site.webmanifest' />
+          <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+          <link
+            rel='preconnect'
+            href='https://fonts.gstatic.com/'
+            crossOrigin
+          />
         </Head>
         <body>
           <Main />
