@@ -23,11 +23,15 @@ const Home = () => {
         <div className='h-12' />
 
         {/* Avatar */}
-        <img
-          className='w-full h-auto mx-auto border-4 rounded-lg border-gray-900 sm:w-2/3'
-          src='/george.png'
-          alt='Georgios Kotziabassis'
-        />
+        <picture>
+          <source srcSet='/george.webp' type='image/webp' />
+          <source srcSet='/george.png' type='image/png' />
+          <img
+            className='w-full h-auto mx-auto border-4 rounded-lg border-gray-900 sm:w-2/3'
+            src='/george.png'
+            alt='Georgios Kotziabassis'
+          />
+        </picture>
 
         <div className='h-12' />
 
