@@ -28,10 +28,6 @@ class MyDocument extends Document {
             href='/favicon/favicon-32x32.png'
           />
           <link rel='manifest' href='/favicon/site.webmanifest' />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap'
-            rel='stylesheet'
-          ></link>
         </Head>
         <body>
           <Main />
