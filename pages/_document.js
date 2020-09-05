@@ -29,11 +29,7 @@ class MyDocument extends Document {
           />
           <link rel='manifest' href='/favicon/site.webmanifest' />
           <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-          <link
-            rel='preconnect'
-            href='https://fonts.gstatic.com/'
-            crossOrigin
-          />
+          <link rel='preconnect' href='https://fonts.gstatic.com/' />
         </Head>
         <body>
           <Main />
