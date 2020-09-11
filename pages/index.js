@@ -157,6 +157,18 @@ const Home = () => {
             with a bachelor's degree in computer science in the summer of 2019.
             I like to work with JavaScript, mainly in the front end, although I
             have experience with back-end development, too.
+            <br />
+            <br />
+            You can view my resume{' '}
+            <a
+              className='text-pink-700 focus:outline-none'
+              href='https://drive.google.com/file/d/1tNxEZA31hu-ioyA0pASi05pCFng04OJd/view'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              here
+            </a>
+            .
           </p>
         </div>
 
