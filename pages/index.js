@@ -159,14 +159,14 @@ const Home = () => {
             have experience with back-end development, too.
             <br />
             <br />
-            You can view my resume{' '}
+            You can check out my{' '}
             <a
               className='text-pink-700 focus:outline-none'
-              href='https://drive.google.com/file/d/1tNxEZA31hu-ioyA0pASi05pCFng04OJd/view'
+              href='https://drive.google.com/file/d/19K22fFrHuAYBryunWEkP4bB1CcFSdKS_/view'
               target='_blank'
               rel='noopener noreferrer'
             >
-              here
+              resume
             </a>
             .
           </p>
@@ -203,6 +203,9 @@ const Home = () => {
               Next.js
             </div>
             <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 text-base font-normal leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+              Gatsby
+            </div>
+            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 text-base font-normal leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
               Tailwind CSS
             </div>
             <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 text-base font-normal leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
@@ -210,6 +213,15 @@ const Home = () => {
             </div>
             <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 text-base font-normal leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
               MongoDB
+            </div>
+            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 text-base font-normal leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+              Jest
+            </div>
+            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 text-base font-normal leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+              Git
+            </div>
+            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 text-base font-normal leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+              Figma
             </div>
           </div>
         </div>
