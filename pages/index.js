@@ -30,6 +30,8 @@ const Home = () => {
             className='w-full h-auto mx-auto border-4 rounded-lg border-gray-900 sm:w-2/3'
             src='/george.png'
             alt='Georgios Kotziabassis'
+            width='416'
+            height='416'
           />
         </picture>
 
@@ -232,7 +234,47 @@ const Home = () => {
         <div className='leading-8'>
           <h3 className='text-2xl font-bold text-pink-600'>// Projects</h3>
           <div className='h-4' />
-          <p className='text-xl font-normal'>Coming soon. 👀</p>
+          <div>
+            <h4 className='text-xl font-bold'>PWG</h4>
+            <p className='text-xl font-normal'>
+              A simple website for generating secure, random passwords.
+            </p>
+            <div className='h-2' />
+            <picture>
+              <source srcSet='/projects/pwg-snapshot.webp' type='image/webp' />
+              <source srcSet='/projects/pwg-snapshot.png' type='image/png' />
+              <img
+                className='w-full rounded-lg'
+                src='/projects/pwg-snapshot.png'
+                alt='PWG'
+                width='624'
+                height='351'
+              />
+            </picture>
+            <div className='h-2' />
+            <div className='flex'>
+              <a
+                className='w-full mr-1 py-2 px-4 border-2 rounded-lg border-transparent text-base font-normal leading-6 text-center text-white bg-gray-900 hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
+                href='https://pwg-blue.vercel.app/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                View Site
+              </a>
+              <a
+                className='w-full ml-1 py-2 px-4 border-2 rounded-lg border-transparent text-base font-normal leading-6 text-center text-white bg-gray-900 hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
+                href='https://github.com/aeorge/pwg'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                View Code
+              </a>
+            </div>
+          </div>
+          <div className='h-8' />
+          <p className='text-xl font-normal text-center'>
+            More coming soon. 🔨
+          </p>
         </div>
 
         <div className='h-12' />
