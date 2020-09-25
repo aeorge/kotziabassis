@@ -11,7 +11,7 @@ const Home = () => {
         />
       </Head>
 
-      <main className='container max-w-2xl mx-auto px-4 font-nunito text-gray-900 sm:px-6'>
+      <main className='container max-w-2xl mx-auto px-4 font-nunito text-gray-900 touch-action-manipulation sm:px-6'>
         <div className='h-12' />
 
         {/* Name and title */}
