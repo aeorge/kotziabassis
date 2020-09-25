@@ -47,7 +47,7 @@ const Home = () => {
             rel='noopener noreferrer'
           >
             <svg
-              className='w-8 h-8 fill-current hover:text-pink-600'
+              className='w-8 h-8 fill-current transition duration-200 ease-in-out hover:text-pink-600'
               viewBox='0 0 512 512'
             >
               <path
@@ -71,7 +71,7 @@ const Home = () => {
             rel='noopener noreferrer'
           >
             <svg
-              className='w-8 h-8 fill-current hover:text-pink-600'
+              className='w-8 h-8 fill-current transition duration-200 ease-in-out hover:text-pink-600'
               viewBox='0 0 512 512'
             >
               <path
@@ -94,7 +94,7 @@ const Home = () => {
             rel='noopener noreferrer'
           >
             <svg
-              className='w-8 h-8 fill-current hover:text-pink-600'
+              className='w-8 h-8 fill-current transition duration-200 ease-in-out hover:text-pink-600'
               viewBox='0 0 512 512'
             >
               <circle cx='56' cy='56' r='56' />
@@ -114,7 +114,7 @@ const Home = () => {
             rel='noopener noreferrer'
           >
             <svg
-              className='w-8 h-8 fill-current hover:text-pink-600'
+              className='w-8 h-8 fill-current transition duration-200 ease-in-out hover:text-pink-600'
               viewBox='0 0 512 512'
             >
               <polygon points='149.216,96 36.448,96 101.696,210.912 16,352 128.768,352 214.464,210.912' />
@@ -254,7 +254,7 @@ const Home = () => {
             </picture>
             <div className='flex space-x-2'>
               <a
-                className='w-full py-2 px-4 rounded-lg leading-6 text-center text-white bg-gray-900 hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
+                className='w-full py-2 px-4 rounded-lg leading-6 text-center text-white bg-gray-900 transition duration-200 ease-in-out hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
                 href='https://pwg-blue.vercel.app/'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -262,7 +262,7 @@ const Home = () => {
                 View Site
               </a>
               <a
-                className='w-full py-2 px-4 rounded-lg leading-6 text-center text-white bg-gray-900 hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
+                className='w-full py-2 px-4 rounded-lg leading-6 text-center text-white bg-gray-900 transition duration-200 ease-in-out hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
                 href='https://github.com/aeorge/pwg'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -282,7 +282,7 @@ const Home = () => {
           <p className='text-xl text-center'>Do you have any questions?</p>
           <div className='h-4' />
           <a
-            className='block w-full mx-auto p-4 rounded-lg leading-6 text-center text-white bg-gray-900 hover:bg-pink-600 focus:bg-pink-600 focus:outline-none sm:w-64'
+            className='block w-full mx-auto p-4 rounded-lg leading-6 text-center text-white bg-gray-900 transition duration-200 ease-in-out hover:bg-pink-600 focus:bg-pink-600 focus:outline-none sm:w-64'
             href='mailto:kotziabassis@gmail.com'
           >
             Contact Me
