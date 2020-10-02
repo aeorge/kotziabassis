@@ -9,6 +9,7 @@ const Home = () => {
           name='description'
           content='Portfolio website of Georgios Kotziabassis, a Junior Software Developer from Backnang, Germany.'
         />
+        <script async src='https://cdn.splitbee.io/sb.js'></script>
       </Head>
 
       <main className='container max-w-2xl mx-auto px-4 font-nunito text-gray-900 touch-action-manipulation sm:px-6'>
