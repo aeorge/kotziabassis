@@ -12,13 +12,13 @@ const Home = () => {
         <script async src='https://cdn.splitbee.io/sb.js'></script>
       </Head>
 
-      <main className='container max-w-2xl mx-auto px-4 font-nunito text-gray-900 touch-action-manipulation sm:px-6'>
+      <main className='container max-w-2xl px-4 mx-auto text-gray-900 touch-action-manipulation sm:px-6'>
         <div className='h-12' />
 
         {/* Name and title */}
         <div className='text-2xl text-center sm:text-3xl'>
           <h1 className='font-bold'>Georgios Kotziabassis</h1>
-          <h2 className='font-normal'>Junior Software Developer</h2>
+          <h2>Junior Software Developer</h2>
         </div>
 
         <div className='h-12' />
@@ -28,7 +28,7 @@ const Home = () => {
           <source srcSet='/george.webp' type='image/webp' />
           <source srcSet='/george.png' type='image/png' />
           <img
-            className='w-full mx-auto border-4 rounded-lg border-gray-900 sm:w-2/3'
+            className='w-full mx-auto border-4 border-gray-900 rounded-lg sm:w-2/3'
             src='/george.png'
             alt='Georgios Kotziabassis'
             width='416'
@@ -39,18 +39,15 @@ const Home = () => {
         <div className='h-12' />
 
         {/* Social Media Links */}
-        <div className='flex justify-evenly max-w-xs mx-auto'>
+        <div className='flex max-w-xs mx-auto justify-evenly'>
           <a
-            className='focus:text-pink-600 focus:outline-none'
+            className='transition duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600'
             href='https://github.com/aeorge'
             aria-label='GitHub'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <svg
-              className='w-8 h-8 fill-current transition duration-200 ease-in-out hover:text-pink-600'
-              viewBox='0 0 512 512'
-            >
+            <svg className='w-8 h-8 fill-current' viewBox='0 0 512 512'>
               <path
                 d='M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
                 c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
@@ -65,16 +62,13 @@ const Home = () => {
             </svg>
           </a>
           <a
-            className='focus:text-pink-600 focus:outline-none'
+            className='transition duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600'
             href='https://twitter.com/kotziabassis'
             aria-label='Twitter'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <svg
-              className='w-8 h-8 fill-current transition duration-200 ease-in-out hover:text-pink-600'
-              viewBox='0 0 512 512'
-            >
+            <svg className='w-8 h-8 fill-current' viewBox='0 0 512 512'>
               <path
                 d='M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
                 c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
@@ -88,16 +82,13 @@ const Home = () => {
             </svg>
           </a>
           <a
-            className='focus:text-pink-600 focus:outline-none'
+            className='transition duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600'
             href='https://linkedin.com/in/kotziabassis'
             aria-label='LinkedIn'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <svg
-              className='w-8 h-8 fill-current transition duration-200 ease-in-out hover:text-pink-600'
-              viewBox='0 0 512 512'
-            >
+            <svg className='w-8 h-8 fill-current' viewBox='0 0 512 512'>
               <circle cx='56' cy='56' r='56' />
               <rect y='160' width='114.496' height='352' />
               <path
@@ -108,16 +99,13 @@ const Home = () => {
             </svg>
           </a>
           <a
-            className='focus:text-pink-600 focus:outline-none'
+            className='transition duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600'
             href='https://xing.com/profile/Georgios_Kotziabassis/cv'
             aria-label='Xing'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <svg
-              className='w-8 h-8 fill-current transition duration-200 ease-in-out hover:text-pink-600'
-              viewBox='0 0 512 512'
-            >
+            <svg className='w-8 h-8 fill-current' viewBox='0 0 512 512'>
               <polygon points='149.216,96 36.448,96 101.696,210.912 16,352 128.768,352 214.464,210.912' />
               <polygon points='496,0 376.384,0 198.688,311.264 313.184,512 432.8,512 318.304,311.264' />
             </svg>
@@ -127,7 +115,7 @@ const Home = () => {
         <div className='h-6' />
 
         {/* Separator */}
-        <hr className='border-2 rounded-full border-gray-900' />
+        <hr className='border-2 border-gray-900 rounded-full' />
 
         <div className='h-12' />
 
@@ -187,43 +175,43 @@ const Home = () => {
           </p>
           <div className='h-4' />
           <div className='flex flex-wrap -mb-4'>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               HTML5
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               CSS3
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               JavaScript
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               React
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               React Native
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               Next.js
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               Gatsby
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               Tailwind CSS
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               Node.js
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               MongoDB
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               Jest
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               Git
             </div>
-            <div className='mb-4 mr-4 py-2 px-4 border-2 rounded-lg border-gray-900 leading-6 text-center select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
               Figma
             </div>
           </div>
@@ -255,7 +243,7 @@ const Home = () => {
             </picture>
             <div className='flex space-x-2'>
               <a
-                className='w-full py-2 px-4 rounded-lg leading-6 text-center text-white bg-gray-900 transition duration-200 ease-in-out hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
+                className='w-full px-4 py-2 leading-6 text-center text-white transition duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
                 href='https://pwg-blue.vercel.app/'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -263,7 +251,7 @@ const Home = () => {
                 View Site
               </a>
               <a
-                className='w-full py-2 px-4 rounded-lg leading-6 text-center text-white bg-gray-900 transition duration-200 ease-in-out hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
+                className='w-full px-4 py-2 leading-6 text-center text-white transition duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
                 href='https://github.com/aeorge/pwg'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -283,7 +271,7 @@ const Home = () => {
           <p className='text-xl text-center'>Do you have any questions?</p>
           <div className='h-4' />
           <a
-            className='block w-full mx-auto p-4 rounded-lg leading-6 text-center text-white bg-gray-900 transition duration-200 ease-in-out hover:bg-pink-600 focus:bg-pink-600 focus:outline-none sm:w-64'
+            className='block w-full p-4 mx-auto leading-6 text-center text-white transition duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none sm:w-64'
             href='mailto:kotziabassis@gmail.com'
           >
             Contact Me
