@@ -15,4 +15,8 @@ module.exports = {
     defaultLineHeights: true,
     standardFontWeights: true,
   },
+  experimental: {
+    darkModeVariant: true,
+  },
+  dark: 'class',
 }

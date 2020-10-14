@@ -1,6 +1,16 @@
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
+import { Switch } from '@headlessui/react'
 
 const Home = () => {
+  const [dark, setDark] = useState(false)
+
+  useEffect(() => {
+    dark
+      ? document.documentElement.classList.add('dark')
+      : document.documentElement.classList.remove('dark')
+  }, [dark])
+
   return (
     <div>
       <Head>
@@ -12,7 +22,26 @@ const Home = () => {
         <script async src='https://cdn.splitbee.io/sb.js'></script>
       </Head>
 
-      <main className='container max-w-2xl px-4 mx-auto text-gray-900 touch-action-manipulation sm:px-6'>
+      <main className='container max-w-2xl px-4 mx-auto touch-action-manipulation sm:px-6'>
+        {/* Dark Mode Switch */}
+        <div className='relative'>
+          <Switch
+            as='button'
+            checked={dark}
+            onChange={() => setDark(!dark)}
+            className={`${
+              dark ? 'bg-purple-600' : 'bg-pink-600'
+            } absolute right-0 mt-4 inline-flex flex-shrink-0 w-12 h-6 transition-colors duration-200 ease-in-out border-2 border-transparent rounded-full cursor-pointer focus:outline-none focus:shadow-outline`}
+          >
+            <span className='sr-only'>Dark Mode</span>
+            <span
+              className={`${
+                dark ? 'translate-x-6' : 'translate-x-0'
+              } inline-block w-5 h-5 transition-transform duration-200 ease-in-out transform bg-white rounded-full`}
+            />
+          </Switch>
+        </div>
+
         <div className='h-12' />
 
         {/* Name and title */}
@@ -28,7 +57,7 @@ const Home = () => {
           <source srcSet='/george.webp' type='image/webp' />
           <source srcSet='/george.png' type='image/png' />
           <img
-            className='w-full mx-auto border-4 border-gray-900 rounded-lg sm:w-2/3'
+            className='w-full mx-auto border-4 border-gray-900 rounded-lg dark:border-white sm:w-2/3'
             src='/george.png'
             alt='Georgios Kotziabassis'
             width='416'
@@ -41,7 +70,7 @@ const Home = () => {
         {/* Social Media Links */}
         <div className='flex max-w-xs mx-auto justify-evenly'>
           <a
-            className='transition duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600'
+            className='transition-colors duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600 dark:focus:text-purple-600 dark:hover:text-purple-600'
             href='https://github.com/aeorge'
             aria-label='GitHub'
             target='_blank'
@@ -62,7 +91,7 @@ const Home = () => {
             </svg>
           </a>
           <a
-            className='transition duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600'
+            className='transition-colors duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600 dark:focus:text-purple-600 dark:hover:text-purple-600'
             href='https://twitter.com/kotziabassis'
             aria-label='Twitter'
             target='_blank'
@@ -82,7 +111,7 @@ const Home = () => {
             </svg>
           </a>
           <a
-            className='transition duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600'
+            className='transition-colors duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600 dark:focus:text-purple-600 dark:hover:text-purple-600'
             href='https://linkedin.com/in/kotziabassis'
             aria-label='LinkedIn'
             target='_blank'
@@ -99,7 +128,7 @@ const Home = () => {
             </svg>
           </a>
           <a
-            className='transition duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600'
+            className='transition-colors duration-200 ease-in-out focus:text-pink-600 focus:outline-none hover:text-pink-600 dark:focus:text-purple-600 dark:hover:text-purple-600'
             href='https://xing.com/profile/Georgios_Kotziabassis/cv'
             aria-label='Xing'
             target='_blank'
@@ -115,13 +144,15 @@ const Home = () => {
         <div className='h-6' />
 
         {/* Separator */}
-        <hr className='border-2 border-gray-900 rounded-full' />
+        <hr className='border-2 border-gray-900 rounded-full dark:border-white' />
 
         <div className='h-12' />
 
         {/* About me */}
         <div className='leading-8'>
-          <h3 className='text-2xl font-bold text-pink-600'>// About me</h3>
+          <h3 className='text-2xl font-bold text-pink-600 dark:text-purple-600'>
+            // About me
+          </h3>
           <div className='h-4' />
           <p className='text-xl'>
             Hello friends! 👋
@@ -129,7 +160,7 @@ const Home = () => {
             My name is Georgios Kotziabassis and I am a Junior Software
             Developer from{' '}
             <a
-              className='text-pink-700 focus:outline-none'
+              className='text-pink-700 focus:outline-none dark:text-purple-500'
               href='https://goo.gl/maps/NB7WMUHMgNmRc1TU6'
               target='_blank'
               rel='noopener noreferrer'
@@ -138,7 +169,7 @@ const Home = () => {
             </a>
             . I graduated from{' '}
             <a
-              className='text-pink-700 focus:outline-none'
+              className='text-pink-700 focus:outline-none dark:text-purple-500'
               href='https://www.hft-stuttgart.com/'
               target='_blank'
               rel='noopener noreferrer'
@@ -152,7 +183,7 @@ const Home = () => {
             <br />
             You can check out my{' '}
             <a
-              className='text-pink-700 focus:outline-none'
+              className='text-pink-700 focus:outline-none dark:text-purple-500'
               href='https://drive.google.com/file/d/19K22fFrHuAYBryunWEkP4bB1CcFSdKS_/view'
               target='_blank'
               rel='noopener noreferrer'
@@ -167,7 +198,9 @@ const Home = () => {
 
         {/* Tech Stack */}
         <div className='leading-8'>
-          <h3 className='text-2xl font-bold text-pink-600'>// Tech Stack</h3>
+          <h3 className='text-2xl font-bold text-pink-600 dark:text-purple-600'>
+            // Tech Stack
+          </h3>
           <div className='h-4' />
           <p className='text-xl'>
             I have experience and have worked on projects with the following
@@ -175,43 +208,43 @@ const Home = () => {
           </p>
           <div className='h-4' />
           <div className='flex flex-wrap -mb-4'>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               HTML5
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               CSS3
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               JavaScript
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               React
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               React Native
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Next.js
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Gatsby
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Tailwind CSS
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Node.js
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               MongoDB
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Jest
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Git
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Figma
             </div>
           </div>
@@ -221,7 +254,9 @@ const Home = () => {
 
         {/* Projects */}
         <div className='leading-8'>
-          <h3 className='text-2xl font-bold text-pink-600'>// Projects</h3>
+          <h3 className='text-2xl font-bold text-pink-600 dark:text-purple-600'>
+            // Projects
+          </h3>
           <div className='h-4' />
           <div className='flex flex-col space-y-2'>
             <div>
@@ -234,7 +269,7 @@ const Home = () => {
               <source srcSet='/projects/pwg-snapshot.webp' type='image/webp' />
               <source srcSet='/projects/pwg-snapshot.png' type='image/png' />
               <img
-                className='w-full rounded-lg'
+                className='w-full border-2 border-transparent rounded-lg dark:border-white'
                 src='/projects/pwg-snapshot.png'
                 alt='PWG'
                 width='624'
@@ -243,7 +278,7 @@ const Home = () => {
             </picture>
             <div className='flex space-x-2'>
               <a
-                className='w-full px-4 py-2 leading-6 text-center text-white transition duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
+                className='w-full px-4 py-2 leading-6 text-center text-white transition-colors duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-gray-900 dark:bg-white dark:hover:bg-purple-600 dark:focus:bg-purple-600'
                 href='https://pwg-blue.vercel.app/'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -251,7 +286,7 @@ const Home = () => {
                 View Site
               </a>
               <a
-                className='w-full px-4 py-2 leading-6 text-center text-white transition duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none'
+                className='w-full px-4 py-2 leading-6 text-center text-white transition-colors duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-gray-900 dark:bg-white dark:hover:bg-purple-600 dark:focus:bg-purple-600'
                 href='https://github.com/aeorge/pwg'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -271,7 +306,7 @@ const Home = () => {
           <p className='text-xl text-center'>Do you have any questions?</p>
           <div className='h-4' />
           <a
-            className='block w-full p-4 mx-auto leading-6 text-center text-white transition duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none sm:w-64'
+            className='block w-full p-4 mx-auto leading-6 text-center text-white transition-colors duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-gray-900 dark:bg-white dark:hover:bg-purple-600 dark:focus:bg-purple-600 sm:w-64'
             href='mailto:kotziabassis@gmail.com'
           >
             Contact Me
