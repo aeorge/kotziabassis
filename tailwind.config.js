@@ -5,6 +5,9 @@ module.exports = {
       fontFamily: {
         nunito: ['nunito', 'sans-serif'],
       },
+      colors: {
+        'dark-gray': '#0E0E10',
+      },
     },
   },
   variants: {},
