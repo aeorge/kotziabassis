@@ -57,7 +57,7 @@ const Home = () => {
           <source srcSet='/george.webp' type='image/webp' />
           <source srcSet='/george.png' type='image/png' />
           <img
-            className='w-full mx-auto border-4 border-gray-900 rounded-lg dark:border-white sm:w-2/3'
+            className='w-full mx-auto border-4 border-gray-900 rounded dark:border-white sm:w-2/3'
             src='/george.png'
             alt='Georgios Kotziabassis'
             width='416'
@@ -208,43 +208,43 @@ const Home = () => {
           </p>
           <div className='h-4' />
           <div className='flex flex-wrap -mb-4'>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               HTML5
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               CSS3
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               JavaScript
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               React
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               React Native
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Next.js
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Gatsby
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Tailwind CSS
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Node.js
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               MongoDB
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Jest
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Git
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded-lg select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
+            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 border-gray-900 rounded select-none hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-purple-600 dark:hover:text-purple-600'>
               Figma
             </div>
           </div>
@@ -269,7 +269,7 @@ const Home = () => {
               <source srcSet='/projects/pwg-snapshot.webp' type='image/webp' />
               <source srcSet='/projects/pwg-snapshot.png' type='image/png' />
               <img
-                className='w-full border-2 border-transparent rounded-lg dark:border-white'
+                className='w-full border-2 border-transparent rounded dark:border-white'
                 src='/projects/pwg-snapshot.png'
                 alt='PWG'
                 width='624'
@@ -278,7 +278,7 @@ const Home = () => {
             </picture>
             <div className='flex space-x-2'>
               <a
-                className='w-full px-4 py-2 leading-6 text-center text-white transition-colors duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-gray-900 dark:bg-white dark:hover:bg-purple-600 dark:focus:bg-purple-600'
+                className='w-full px-4 py-2 leading-6 text-center text-white transition-colors duration-200 ease-in-out bg-gray-900 rounded hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-gray-900 dark:bg-white dark:hover:bg-purple-600 dark:focus:bg-purple-600'
                 href='https://pwg-blue.vercel.app/'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -286,7 +286,7 @@ const Home = () => {
                 View Site
               </a>
               <a
-                className='w-full px-4 py-2 leading-6 text-center text-white transition-colors duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-gray-900 dark:bg-white dark:hover:bg-purple-600 dark:focus:bg-purple-600'
+                className='w-full px-4 py-2 leading-6 text-center text-white transition-colors duration-200 ease-in-out bg-gray-900 rounded hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-gray-900 dark:bg-white dark:hover:bg-purple-600 dark:focus:bg-purple-600'
                 href='https://github.com/aeorge/pwg'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -306,7 +306,7 @@ const Home = () => {
           <p className='text-xl text-center'>Do you have any questions?</p>
           <div className='h-4' />
           <a
-            className='block w-full p-4 mx-auto leading-6 text-center text-white transition-colors duration-200 ease-in-out bg-gray-900 rounded-lg hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-gray-900 dark:bg-white dark:hover:bg-purple-600 dark:focus:bg-purple-600 sm:w-64'
+            className='block w-full p-4 mx-auto leading-6 text-center text-white transition-colors duration-200 ease-in-out bg-gray-900 rounded hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-gray-900 dark:bg-white dark:hover:bg-purple-600 dark:focus:bg-purple-600 sm:w-64'
             href='mailto:kotziabassis@gmail.com'
           >
             Contact Me
