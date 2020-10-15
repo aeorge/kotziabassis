@@ -22,7 +22,9 @@ const Home = () => {
 
         {/* Name and title */}
         <div className='text-2xl text-center sm:text-3xl'>
-          <h1 className='font-bold'>Georgios Kotziabassis</h1>
+          <h1 className='font-bold text-transparent transition-colors duration-200 ease-in-out bg-clip-text bg-gradient-to-r from-indigo-600 to-pink-600 dark:from-pink-600 dark:to-indigo-600'>
+            Georgios Kotziabassis
+          </h1>
           <h2>Junior Software Developer</h2>
         </div>
 
