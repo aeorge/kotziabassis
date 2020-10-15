@@ -8,11 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "@headlessui/react": "^0.2.0",
     "autoprefixer": "^9.8.6",
     "next": "^9.5.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-spring": "^8.0.27",
     "tailwindcss": "^1.9.1"
   }
 }

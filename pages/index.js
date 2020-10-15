@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
-import { Switch } from '@headlessui/react'
+import { useSpring, animated } from 'react-spring'
 
 const Home = () => {
   const [dark, setDark] = useState(false)
@@ -10,6 +10,38 @@ const Home = () => {
       ? document.documentElement.classList.add('dark')
       : document.documentElement.classList.remove('dark')
   }, [dark])
+
+  const properties = {
+    dark: {
+      r: 10,
+      transform: 'rotate(45deg)',
+      cx: 12,
+      cy: 4,
+      opacity: 0,
+    },
+    light: {
+      r: 5,
+      transform: 'rotate(90deg)',
+      cx: 30,
+      cy: 0,
+      opacity: 1,
+    },
+    springConfig: { mass: 1, tension: 500, friction: 25 },
+  }
+
+  const { r, transform, cx, cy, opacity } = properties[dark ? 'dark' : 'light']
+
+  const svgContainerProps = useSpring({
+    transform,
+    config: properties.springConfig,
+  })
+  const maskedCircleProps = useSpring({
+    cx,
+    cy,
+    config: properties.springConfig,
+  })
+  const centerCircleProps = useSpring({ r, config: properties.springConfig })
+  const linesProps = useSpring({ opacity, config: properties.springConfig })
 
   return (
     <div>
@@ -23,23 +55,50 @@ const Home = () => {
       </Head>
 
       <main className='container max-w-2xl px-4 mx-auto touch-action-manipulation sm:px-6'>
-        {/* Dark Mode Switch */}
+        {/* Dark Mode Toggle */}
         <div className='relative'>
-          <Switch
-            as='button'
-            checked={dark}
-            onChange={() => setDark(!dark)}
-            className={`${
-              dark ? 'bg-indigo-600' : 'bg-pink-600'
-            } absolute right-0 mt-4 inline-flex flex-shrink-0 w-12 h-6 transition-colors duration-200 ease-in-out border-4 border-transparent rounded-full cursor-pointer focus:outline-none focus:shadow-outline`}
+          <animated.svg
+            className='absolute right-0 mt-4 cursor-pointer'
+            xmlns='http://www.w3.org/2000/svg'
+            width='30'
+            height='30'
+            viewBox='0 0 24 24'
+            fill='none'
+            strokeWidth='2'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+            stroke={`${dark ? '#5A67D8' : '#D53F8C'}`}
+            onClick={() => setDark(!dark)}
+            style={{
+              ...svgContainerProps,
+            }}
           >
-            <span className='sr-only'>Dark Mode</span>
-            <span
-              className={`${
-                dark ? 'translate-x-6' : 'translate-x-0'
-              } inline-block w-4 h-4 transition-transform duration-200 ease-in-out transform bg-white rounded-full`}
+            <mask id='mask'>
+              <rect x='0' y='0' width='100%' height='100%' fill='white' />
+              <animated.circle style={maskedCircleProps} r='10' fill='black' />
+            </mask>
+
+            <animated.circle
+              cx='12'
+              cy='12'
+              fill={`${dark ? '#5A67D8' : '#D53F8C'}`}
+              mask='url(#mask)'
+              style={centerCircleProps}
             />
-          </Switch>
+            <animated.g
+              stroke={`${dark ? '#5A67D8' : '#D53F8C'}`}
+              style={linesProps}
+            >
+              <line x1='12' y1='1' x2='12' y2='3' />
+              <line x1='12' y1='21' x2='12' y2='23' />
+              <line x1='4.22' y1='4.22' x2='5.64' y2='5.64' />
+              <line x1='18.36' y1='18.36' x2='19.78' y2='19.78' />
+              <line x1='1' y1='12' x2='3' y2='12' />
+              <line x1='21' y1='12' x2='23' y2='12' />
+              <line x1='4.22' y1='19.78' x2='5.64' y2='18.36' />
+              <line x1='18.36' y1='5.64' x2='19.78' y2='4.22' />
+            </animated.g>
+          </animated.svg>
         </div>
 
         <div className='h-12' />
