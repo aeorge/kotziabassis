@@ -19,13 +19,13 @@ const Toggle = () => {
       opacity: 0,
     },
     sun: {
-      r: 5,
+      r: 4,
       transform: 'rotate(90deg)',
       cx: 30,
       cy: 0,
       opacity: 1,
     },
-    springConfig: { mass: 1, tension: 500, friction: 25 },
+    springConfig: { mass: 1, tension: 1000, friction: 50 },
   }
 
   const { r, transform, cx, cy, opacity } = properties[dark ? 'moon' : 'sun']
@@ -44,48 +44,45 @@ const Toggle = () => {
 
   return (
     <div className='relative'>
-      <animated.svg
-        className='absolute right-0 mt-4 cursor-pointer'
-        xmlns='http://www.w3.org/2000/svg'
-        width='30'
-        height='30'
-        viewBox='0 0 24 24'
-        fill='none'
-        strokeWidth='2'
-        strokeLinecap='round'
-        strokeLinejoin='round'
-        stroke={`${dark ? '#5A67D8' : '#D53F8C'}`}
+      <button
+        className='absolute right-0 mt-4 cursor-pointer focus:outline-none focus:shadow-outline'
+        aria-label={`${dark ? 'Toggle Light Mode' : 'Toggle Dark Mode'}`}
         onClick={() => setDark(!dark)}
-        style={{
-          ...svgContainerProps,
-        }}
       >
-        <mask id='mask'>
-          <rect x='0' y='0' width='100%' height='100%' fill='white' />
-          <animated.circle style={maskedCircleProps} r='10' fill='black' />
-        </mask>
-
-        <animated.circle
-          cx='12'
-          cy='12'
-          fill={`${dark ? '#5A67D8' : '#D53F8C'}`}
-          mask='url(#mask)'
-          style={centerCircleProps}
-        />
-        <animated.g
+        <animated.svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='30'
+          height='30'
+          viewBox='0 0 24 24'
+          fill='none'
+          strokeWidth={`${dark ? '0' : '2'}`}
+          strokeLinecap='round'
+          strokeLinejoin='round'
           stroke={`${dark ? '#5A67D8' : '#D53F8C'}`}
-          style={linesProps}
+          style={{
+            ...svgContainerProps,
+          }}
         >
-          <line x1='12' y1='1' x2='12' y2='3' />
-          <line x1='12' y1='21' x2='12' y2='23' />
-          <line x1='4.22' y1='4.22' x2='5.64' y2='5.64' />
-          <line x1='18.36' y1='18.36' x2='19.78' y2='19.78' />
-          <line x1='1' y1='12' x2='3' y2='12' />
-          <line x1='21' y1='12' x2='23' y2='12' />
-          <line x1='4.22' y1='19.78' x2='5.64' y2='18.36' />
-          <line x1='18.36' y1='5.64' x2='19.78' y2='4.22' />
-        </animated.g>
-      </animated.svg>
+          <mask id='mask'>
+            <rect x='0' y='0' width='100%' height='100%' fill='white' />
+            <animated.circle style={maskedCircleProps} r='9' fill='black' />
+          </mask>
+
+          <animated.circle
+            cx='12'
+            cy='12'
+            fill={`${dark ? '#5A67D8' : '#D53F8C'}`}
+            mask='url(#mask)'
+            style={centerCircleProps}
+          />
+          <animated.g
+            stroke={`${dark ? '#5A67D8' : '#D53F8C'}`}
+            style={linesProps}
+          >
+            <path d='M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' />
+          </animated.g>
+        </animated.svg>
+      </button>
     </div>
   )
 }
