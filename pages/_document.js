@@ -31,7 +31,7 @@ class MyDocument extends Document {
           <link rel='dns-prefetch' href='//fonts.googleapis.com' />
           <link rel='preconnect' href='https://fonts.gstatic.com/' />
         </Head>
-        <body className='transition-colors duration-200 ease-in-out text-dark-gray font-nunito dark:text-white dark:bg-dark-gray'>
+        <body className='transition-colors text-dark-gray font-nunito dark:text-white dark:bg-dark-gray'>
           <Main />
           <NextScript />
         </body>

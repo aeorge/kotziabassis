@@ -22,7 +22,7 @@ const Home = () => {
 
         {/* Name and title */}
         <div className='text-2xl text-center sm:text-3xl'>
-          <h1 className='font-bold text-transparent transition-colors duration-200 ease-in-out bg-clip-text bg-gradient-to-r from-indigo-600 to-pink-600 dark:from-pink-600 dark:to-indigo-600'>
+          <h1 className='font-bold text-transparent transition-colors bg-clip-text bg-gradient-to-r from-indigo-600 to-pink-600 dark:from-pink-600 dark:to-indigo-600'>
             Georgios Kotziabassis
           </h1>
           <h2>Junior Software Developer</h2>
@@ -138,7 +138,7 @@ const Home = () => {
             My name is Georgios Kotziabassis and I am a Junior Software
             Developer from{' '}
             <a
-              className='text-pink-700 focus:underline focus:outline-none dark:text-indigo-500'
+              className='text-pink-700 hover:underline focus:underline focus:outline-none dark:text-indigo-500'
               href='https://goo.gl/maps/NB7WMUHMgNmRc1TU6'
               target='_blank'
               rel='noopener noreferrer'
@@ -147,7 +147,7 @@ const Home = () => {
             </a>
             . I graduated from{' '}
             <a
-              className='text-pink-700 focus:underline focus:outline-none dark:text-indigo-500'
+              className='text-pink-700 hover:underline focus:underline focus:outline-none dark:text-indigo-500'
               href='https://www.hft-stuttgart.com/'
               target='_blank'
               rel='noopener noreferrer'
@@ -161,7 +161,7 @@ const Home = () => {
             <br />
             You can check out my{' '}
             <a
-              className='text-pink-700 focus:underline focus:outline-none dark:text-indigo-500'
+              className='text-pink-700 hover:underline focus:underline focus:outline-none dark:text-indigo-500'
               href='https://drive.google.com/file/d/19K22fFrHuAYBryunWEkP4bB1CcFSdKS_/view'
               target='_blank'
               rel='noopener noreferrer'
@@ -256,7 +256,7 @@ const Home = () => {
             </picture>
             <div className='flex space-x-2'>
               <a
-                className='w-full px-4 py-2 font-bold leading-6 text-center text-white transition-colors duration-200 ease-in-out border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:bg-indigo-600 dark:focus:bg-indigo-600'
+                className='w-full px-4 py-2 font-bold leading-6 text-center text-white transition-colors border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:text-white dark:hover:bg-indigo-600 dark:focus:bg-indigo-600'
                 href='https://pwg-blue.vercel.app/'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -264,7 +264,7 @@ const Home = () => {
                 View Site
               </a>
               <a
-                className='w-full px-4 py-2 font-bold leading-6 text-center text-white transition-colors duration-200 ease-in-out border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:bg-indigo-600 dark:focus:bg-indigo-600'
+                className='w-full px-4 py-2 font-bold leading-6 text-center text-white transition-colors border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:text-white dark:hover:bg-indigo-600 dark:focus:bg-indigo-600'
                 href='https://github.com/aeorge/pwg'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -286,7 +286,7 @@ const Home = () => {
           </p>
           <div className='h-4' />
           <a
-            className='block w-full px-4 py-3 mx-auto font-bold leading-6 text-center text-white transition-colors duration-200 ease-in-out border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:bg-indigo-600 dark:focus:bg-indigo-600 sm:w-64'
+            className='block w-full px-4 py-3 mx-auto font-bold leading-6 text-center text-white transition-colors border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:text-white dark:hover:bg-indigo-600 dark:focus:bg-indigo-600 sm:w-64'
             href='mailto:kotziabassis@gmail.com'
           >
             Contact Me

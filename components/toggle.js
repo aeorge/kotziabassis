@@ -45,7 +45,7 @@ const Toggle = () => {
   return (
     <div className='relative'>
       <button
-        className='absolute right-0 mt-4 cursor-pointer focus:outline-none focus:shadow-outline'
+        className='absolute right-0 mt-4 cursor-pointer focus:outline-none focus:ring'
         aria-label={`${dark ? 'Toggle Light Mode' : 'Toggle Dark Mode'}`}
         onClick={() => setDark(!dark)}
       >
