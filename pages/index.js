@@ -21,11 +21,11 @@ const Home = () => {
         <div className='h-12' />
 
         {/* Name and title */}
-        <div className='text-2xl text-center sm:text-3xl'>
+        <div className='text-2xl leading-9 text-center sm:text-3xl sm:leading-10'>
           <h1 className='font-bold text-transparent transition-colors bg-clip-text bg-gradient-to-r from-indigo-600 to-pink-600 dark:from-pink-600 dark:to-indigo-600'>
             Georgios Kotziabassis
           </h1>
-          <h2>Junior Software Developer</h2>
+          <h2>Full-Stack Software Engineer</h2>
         </div>
 
         <div className='h-12' />
