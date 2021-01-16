@@ -256,7 +256,7 @@ const Home = () => {
             </picture>
             <div className='flex space-x-2'>
               <a
-                className='w-full px-4 py-2 font-bold leading-6 text-center text-white transition-colors border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:text-white dark:hover:bg-indigo-600 dark:focus:bg-indigo-600'
+                className='w-full px-4 py-2 font-bold leading-6 text-center text-white transition-colors border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:text-white dark:hover:bg-indigo-600 dark:focus:text-white dark:focus:bg-indigo-600'
                 href='https://pwg-blue.vercel.app/'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -264,7 +264,7 @@ const Home = () => {
                 View Site
               </a>
               <a
-                className='w-full px-4 py-2 font-bold leading-6 text-center text-white transition-colors border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:text-white dark:hover:bg-indigo-600 dark:focus:bg-indigo-600'
+                className='w-full px-4 py-2 font-bold leading-6 text-center text-white transition-colors border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:text-white dark:hover:bg-indigo-600 dark:focus:text-white dark:focus:bg-indigo-600'
                 href='https://github.com/aeorge/pwg'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -286,7 +286,7 @@ const Home = () => {
           </p>
           <div className='h-4' />
           <a
-            className='block w-full px-4 py-3 mx-auto font-bold leading-6 text-center text-white transition-colors border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:text-white dark:hover:bg-indigo-600 dark:focus:bg-indigo-600 sm:w-64'
+            className='block w-full px-4 py-3 mx-auto font-bold leading-6 text-center text-white transition-colors border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:text-white dark:hover:bg-indigo-600 dark:focus:text-white dark:focus:bg-indigo-600 sm:w-64'
             href='mailto:kotziabassis@gmail.com'
           >
             Contact Me
