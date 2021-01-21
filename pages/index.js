@@ -1,8 +1,14 @@
+import { useEffect } from 'react'
 import Head from 'next/head'
+import splitbee from '@splitbee/web'
 
 import Toggle from '../components/toggle'
 
 const Home = () => {
+  useEffect(() => {
+    splitbee.init()
+  }, [])
+
   return (
     <div>
       <Head>
@@ -11,7 +17,6 @@ const Home = () => {
           name='description'
           content='Portfolio website of Georgios Kotziabassis, a Junior Software Developer from Backnang, Germany.'
         />
-        <script async src='https://cdn.splitbee.io/sb.js'></script>
       </Head>
 
       <main className='container max-w-2xl px-4 mx-auto touch-action-manipulation sm:px-6'>
