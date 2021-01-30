@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import Head from 'next/head'
 import splitbee from '@splitbee/web'
 
-import Toggle from '../components/toggle'
+import Toggle from '@/components/toggle'
 
 const Home = () => {
   useEffect(() => {
