@@ -30,7 +30,7 @@ const Home = () => {
           <h1 className='font-bold text-transparent transition-colors bg-clip-text bg-gradient-to-r from-indigo-600 to-pink-600 dark:from-pink-600 dark:to-indigo-600'>
             Georgios Kotziabassis
           </h1>
-          <h2>Full-Stack Software Engineer</h2>
+          <h2>Software Engineer</h2>
         </div>
 
         <div className='h-12' />
