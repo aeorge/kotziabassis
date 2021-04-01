@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { useSpring, animated } from 'react-spring'
+import { useEffect, useState } from 'react'
+import { animated, useSpring } from 'react-spring'
 
 const Toggle = () => {
   const [dark, setDark] = useState(false)
@@ -45,7 +45,7 @@ const Toggle = () => {
   return (
     <div className='relative'>
       <button
-        className='absolute right-0 mt-4 cursor-pointer focus:outline-none focus:ring'
+        className='absolute right-0 mt-4 rounded cursor-pointer focus:outline-none focus:ring'
         aria-label={`${dark ? 'Toggle Light Mode' : 'Toggle Dark Mode'}`}
         onClick={() => setDark(!dark)}
       >
