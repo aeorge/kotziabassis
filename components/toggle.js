@@ -16,28 +16,28 @@ const Toggle = () => {
       transform: 'rotate(45deg)',
       cx: 12,
       cy: 4,
-      opacity: 0,
+      opacity: 0
     },
     sun: {
       r: 4,
       transform: 'rotate(90deg)',
       cx: 30,
       cy: 0,
-      opacity: 1,
+      opacity: 1
     },
-    springConfig: { mass: 1, tension: 1000, friction: 50 },
+    springConfig: { mass: 1, tension: 1000, friction: 50 }
   }
 
   const { r, transform, cx, cy, opacity } = properties[dark ? 'moon' : 'sun']
 
   const svgContainerProps = useSpring({
     transform,
-    config: properties.springConfig,
+    config: properties.springConfig
   })
   const maskedCircleProps = useSpring({
     cx,
     cy,
-    config: properties.springConfig,
+    config: properties.springConfig
   })
   const centerCircleProps = useSpring({ r, config: properties.springConfig })
   const linesProps = useSpring({ opacity, config: properties.springConfig })
@@ -60,7 +60,7 @@ const Toggle = () => {
           strokeLinejoin='round'
           stroke={`${dark ? '#5A67D8' : '#D53F8C'}`}
           style={{
-            ...svgContainerProps,
+            ...svgContainerProps
           }}
         >
           <mask id='mask'>

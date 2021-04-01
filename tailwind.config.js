@@ -4,12 +4,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nunito: ['nunito', 'sans-serif'],
+        nunito: ['nunito', 'sans-serif']
       },
       colors: {
-        'dark-gray': '#0E0E10',
-      },
-    },
+        'dark-gray': '#0E0E10'
+      }
+    }
   },
   variants: {},
   plugins: [],
@@ -17,9 +17,9 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
     defaultLineHeights: true,
-    standardFontWeights: true,
+    standardFontWeights: true
   },
   experimental: {
-    darkModeVariant: true,
-  },
+    darkModeVariant: true
+  }
 }
