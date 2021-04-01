@@ -191,46 +191,46 @@ const Home = () => {
           </p>
           <div className='h-4' />
           <div className='flex flex-wrap -mb-4'>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               HTML5
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               CSS3
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               JavaScript
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               TypeScript
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               React
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               React Native
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               Next.js
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               Tailwind CSS
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               Node.js
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               PostgreSQL
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               MongoDB
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               Jest
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               Git
             </div>
-            <div className='px-4 py-2 mb-4 mr-4 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
+            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
               Figma
             </div>
           </div>
