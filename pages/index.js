@@ -2,7 +2,8 @@ import { useEffect } from 'react'
 import Head from 'next/head'
 import splitbee from '@splitbee/web'
 
-import Toggle from '@/components/toggle'
+import { Toggle } from '@/components/toggle'
+import { Tag } from '@/components/tag'
 
 const Home = () => {
   useEffect(() => {
@@ -191,51 +192,21 @@ const Home = () => {
           </p>
           <div className='h-4' />
           <div className='flex flex-wrap -mb-4'>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              HTML5
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              CSS3
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              JavaScript
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              TypeScript
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              React
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              React Native
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              Next.js
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              Node.js
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              GraphQL
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              Tailwind CSS
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              PostgreSQL
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              MongoDB
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              Jest
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              Git
-            </div>
-            <div className='px-4 py-2 mb-2 mr-2 leading-6 text-center border-2 rounded select-none border-dark-gray hover:border-pink-600 hover:text-pink-600 dark:border-white dark:hover:border-indigo-600 dark:hover:text-indigo-600'>
-              Figma
-            </div>
+            <Tag label='HTML5' />
+            <Tag label='CSS3' />
+            <Tag label='JavaScript' />
+            <Tag label='TypeScript' />
+            <Tag label='React' />
+            <Tag label='React Native' />
+            <Tag label='Next.js' />
+            <Tag label='Node.js' />
+            <Tag label='GraphQL' />
+            <Tag label='Tailwind CSS' />
+            <Tag label='PostgreSQL' />
+            <Tag label='MongoDB' />
+            <Tag label='Jest' />
+            <Tag label='Git' />
+            <Tag label='Figma' />
           </div>
         </div>
 
