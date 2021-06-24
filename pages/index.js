@@ -1,6 +1,11 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import { useEffect } from 'react'
 import Head from 'next/head'
+import Image from 'next/image'
 import splitbee from '@splitbee/web'
+
+import avatar from '../public/george.png'
+import pwg from '../public/projects/pwg.png'
 
 import { Toggle } from '@/components/toggle'
 import { Tag } from '@/components/tag'
@@ -37,17 +42,16 @@ const Home = () => {
         <div className='h-12' />
 
         {/* Avatar */}
-        <picture>
-          <source srcSet='/george.webp' type='image/webp' />
-          <source srcSet='/george.png' type='image/png' />
-          <img
-            className='w-full mx-auto border-4 rounded-full border-dark-gray dark:border-white sm:w-2/3'
-            src='/george.png'
+        <div className='flex w-full mx-auto border-4 rounded-full border-dark-gray dark:border-white sm:w-2/3'>
+          <Image
+            className='rounded-full'
+            src={avatar}
             alt='Georgios Kotziabassis'
-            width='416'
-            height='416'
+            width='600'
+            height='600'
+            priority
           />
-        </picture>
+        </div>
 
         <div className='h-12' />
 
@@ -160,9 +164,9 @@ const Home = () => {
             >
               HFT Stuttgart
             </a>{' '}
-            with a bachelor's degree in computer science in the summer of 2019.
-            I like to work with JavaScript, mainly in the front end, although I
-            have experience with back-end development, too.
+            with a bachelor&apos;s degree in computer science in the summer of
+            2019. I like to work with JavaScript, mainly in the front end,
+            although I have experience with back-end development, too.
             <br />
             <br />
             You can check out my{' '}
@@ -225,17 +229,14 @@ const Home = () => {
                 A simple website for generating secure, random passwords.
               </p>
             </div>
-            <picture>
-              <source srcSet='/projects/pwg-snapshot.webp' type='image/webp' />
-              <source srcSet='/projects/pwg-snapshot.png' type='image/png' />
-              <img
-                className='w-full border-2 rounded border-dark-gray dark:border-white'
-                src='/projects/pwg-snapshot.png'
+            <div className='flex w-full border-2 rounded border-dark-gray dark:border-white'>
+              <Image
+                className='rounded-sm'
+                src={pwg}
                 alt='PWG'
-                width='624'
-                height='352.75'
+                placeholder='blur'
               />
-            </picture>
+            </div>
             <div className='flex space-x-2'>
               <a
                 className='w-full px-4 py-2 font-bold leading-6 text-center text-white transition-colors border-2 border-transparent rounded bg-dark-gray hover:bg-pink-600 focus:bg-pink-600 focus:outline-none dark:text-dark-gray dark:bg-white dark:hover:text-white dark:hover:bg-indigo-600 dark:focus:text-white dark:focus:bg-indigo-600'
