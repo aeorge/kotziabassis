@@ -17,6 +17,10 @@
     "react-spring": "^9.2.3",
     "tailwindcss": "^2.2.4"
   },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-next": "^11.0.1"
+  },
   "prettier": {
     "jsxSingleQuote": true,
     "semi": false,
