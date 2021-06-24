@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { animated, useSpring } from 'react-spring'
 
-const Toggle = () => {
+export const Toggle = () => {
   const [dark, setDark] = useState(false)
 
   useEffect(() => {
@@ -86,5 +86,3 @@ const Toggle = () => {
     </div>
   )
 }
-
-export default Toggle
